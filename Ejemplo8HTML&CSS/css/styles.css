@@ -1,0 +1,36 @@
+/*
+    CSS:
+    Definido como hojas de estilo en cascada (Cascada Style Sheet), no es mas que otro
+    lenguaje, con una finalidad principal poder difinir de manera global, parcial o 
+    total la presentación de documentos estructurados en HTML, generando contenido
+    estético y visual.
+*/
+/*
+    1. Estilo para una etiqueta o más
+    Sintaxis:
+    etiqueta{
+        atributo:valor;
+    }
+*/
+h3,
+h3,
+h1,
+h5,
+h6 {
+    color: slategray;
+    text-align: center;
+    font-weight: bold;
+}
+/*
+    2. Estilo para una etiqueta con identificador (Id)
+    Sintaxis:
+    #nombreId{
+        atributo: Valor;
+    }
+    Trasladamos el estilo apuntando con el selector id o indicador
+*/
+#p2{
+    background-color: orange;
+    font-size: xx-large;
+    font-style: oblique;
+}

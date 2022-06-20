@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+</head>
+
+<body>
+    <!-- 
+        Recursos de Atributo multimedia:
+        Atributos       Valor                           Descripción
+        1. src=""       url o fichero en local          Contenido a reproducir
+        2. poster=""    url o archivo                   Muestra una imagen a modo de presentacion
+        3. preload=""   auto/metadara/none              como se recarga la multimedia
+        4. autoplay=""  boolean(true o false)           Reproducciona automatica o no
+        5. loop=""      boolean(true | false)           Ciclo o no continuado de reproducción
+        6. muted=""     boolean(true | false)           Reproducción sin sonido o no
+        7. controls=""  boolean(true | false)           Muestra los controles
+        8. width=""     pixel, rem, em o %              ancho
+        9. height=""    ''                              alto
+        10. metiagroup=""   nombre                      Hace referencia al nombre del archivo o autor,..
+        
+        Sintaxis:
+
+        <video>
+            <source/>
+        </video>
+     -->
+    <!-- 
+        Vídeo No recomendado y/o en su defecto atento a sus atributos
+      -->
+    <div align="center">
+        <!--  
+        <video width="28%" poster="images/sound_mixer_21407.png" autoplay="true" controls="true" preload="none">
+            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
+        </video> -->
+        <!-- 
+            Vídeo recomendado: Al identificar muted, automáticamente comprende o genera acceso al autoplay
+         -->
+        <!-- 
+        <video src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" width="28%" autoplay="true" controls="true"
+            preload="none" loop="true" muted="true"></video> -->
+    </div>
+    <!-- 
+        youtube, vimeo, dailymotion el all. Utilzaremos la etiqueta <iframe>, Como detalle encontramos un atributo
+            allowfullscreen, nos permite que los vídeos se puedan mostrar en pantalla completa.
+       -->
+    <div>
+        <!--  
+        <iframe width="460" height="215" src="https://www.youtube.com/embed/PSR_P22q9XA" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen>
+        </iframe> -->
+        <!-- 
+            Si es muy visualizado tu página será una de las primeras. Entonces youtube te restringe.
+         -->
+         <!--  
+        <iframe style="width:100%;height:100%;position:relative;left:0px;top:0px;overflow:hidden" frameborder="0"
+            type="text/html" src="https://www.dailymotion.com/embed/video/x1caqw?autoplay=1" width="100%" height="100%"
+            allowfullscreen allow="autoplay"> </iframe>   -->
+        <!-- height se quita para que lo ponga proporcional -->
+        <!-- Sólo funciona autoplay si está muteado -->
+        <iframe style="width:33%;position:relative;
+                        left:0px;top:0px;overflow:hidden"
+            frameborder="0"
+            type="text/html"
+            src="https://www.dailymotion.com/embed/video/x1caqw?autoplay=1"
+            width="100%"
+            height="100%"
+            allowfullscreen allow="autoplay">
+        </iframe>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <!-- 
+        -----tablas------
+        Elementos de entrada de doble salida. Utiliza los mismos elementos
+        que cualquier entorno; filas, columnas, datos, ..
+        SINTAXIS:
+            Etiqueta                    Descripción
+            <table>                     Etiqueta contenedora de la tabla
+            <th>                        En la tabla, elemento de dato header, cabecera-dato
+            <tr>                        Filas-row etiqueta contonedora de fila
+            <td>                        Datos de las celdas, las columnas. (celda de tabla) (table data)
+            <caption>                   Etiqueta contenedora de títulos.
+     -->
+    <h3>
+        Ejemplo de tabla simple
+    </h3>
+    <table border="1" bgcolor="pink">
+        <caption>
+            Numeración del 1 al 12
+        </caption>
+        <tr bgcolor="blue">
+            <td>UNO</td>
+            <td>DOS</td>
+            <td>TRES</td>
+        </tr>
+        <tr>
+            <td>Cuatro</td>
+            <td>Cinco</td>
+            <td>Seis</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Diez-10</td>
+            <td>Once-11</td>
+            <td>Doce-12</td>
+        </tr>
+        <table>
+            <!-- Combinación de celdas
+                 Atributos      Valor               Descripción
+                colspan         número de espacio   Número de columnas/espacios que la celda abarcará
+                rowspan         número de espacio   Número de filas/espacios que abarcará
+            -->
+            <h3>Combinación de celdas</h3>
+            <table border="5" style="text-align: center;" align="center" bgcolor="pink">
+                <tr>
+                    <th bgcolor="blue">Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                    <th>Columna 4</th>
+                </tr>
+                <tr bgcolor="Blue">
+                    <td colspan="2">Dato 1</td>
+                    <!--<td>Dato 2</td> -->
+                    <td>Dato 3</td>
+                    <td rowspan="3">Dato 4</td>
+                </tr>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                    <!-- <td>Dato 4</td> -->
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">Dato 1</td>
+                    <!-- <td>Dato 2</td> -->
+                    <td>Dato 3</td>
+                    <!-- <td>Dato 4</td> -->
+                </tr>
+                <tr>
+                    <!-- <td>Dato 1</td>
+                    <td>Dato 2</td> -->
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+
+            </table>
+        </table>
+    </table>
+    <table>
+        <h3>Agrupaciones de columnas</h3>
+        <caption>El periódico digital</caption>
+
+        <tr>
+            <th>News</th>
+            <th>Deportes </th>
+            <th>Tiempo</th>
+        </tr>
+        <tr>
+            <td>Nacional</td>
+            <td>Fútbol</td>
+            <td>Europa</td>
+        </tr>
+        <tr>
+            <td>Internacional</td>
+            <td>Petaca</td>
+            <td>España</td>
+        </tr>
+        <tr>
+            <td>Sucesos</td>
+            <td>Baloncesto</td>
+            <td>Madrid</td>
+        </tr>
+    <colgroup>
+        <!-- <col style="background-color: lemonchiffon" /> -->
+        <!-- <col span="0" style="background-color: lightsalmon;" /> -->
+        <!-- <col span="0" style="background-color: lightsalmon;" /> -->
+        <col span="2" style="background-color: lightsalmon;" />
+        <col style="background-color: lemonchiffon" />
+    </colgroup>
+    </table>
+    <!-- 
+        Ejercicio:
+        Realizar una tabla de 2 columnas y 3 filas, fondo negro en la cabecera, (letras en azul), tabla centrada
+        y añadir enlaces. Temática: principales buscadores de Internet, caña y pincho con imágenes!
+     -->
+     <table style="text-align:center;" align="center">
+        <h3>
+            Ejercicio Principales Buscadores (tabla de 2 columnas y 3 filas)
+        </h3>
+        <caption>Principales buscadores de Internet, caña y pincho con imágenes</caption>
+        <tr style = "background-color:black; color: blue">
+            <th>Buscador</th>
+            <th>Referencias</th>
+        </tr>
+        <tr style = "color:blue; background-color:#000000">
+            <td>Google</td>
+            <td>América Centro Oriental</td>
+        </tr>
+        <tr >
+            <td><a href="www.google.es"></a> <img src="images/google.png" width="40px" alt="hola"> </td>
+            <td>América Centro Oriental</td>
+        </tr>
+        <tr >
+            <td><a href="www.bing.com"></a> <img src="images/google.png" width="40px" alt=""> </td>
+            <td>América Centro Oriental</td>
+        </tr>
+        <tr>
+            <!-- <td width="50%" height="50%">Bing</td> -->
+            <td width="60%" height="60%"><img src=D:\programacionDesarrolloWeb\Ejemplo4-imagenes\images\boladelmundo.png " width="100%" height="100px" alt="hola mundo" /></td>
+            <td width="80%" height="80%"><img src=D:\programacionDesarrolloWeb\Ejemplo4-imagenes\images\boladelmundo.png " width="100%" height="100px" alt="hola mundo" /></td>
+            
+        </tr>
+    </table>
+</body>
+
+</html>

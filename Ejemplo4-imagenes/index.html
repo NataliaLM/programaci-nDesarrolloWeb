@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento de Imágenes</title>
+</head>
+
+<body>
+    <h2>Tratamiento e Imágenes y Texto</h2>
+    <!-- 
+        Para insertar imágenes, tendremos una etiqueta no contenedora pero entendida como
+        de apertura cierre: Su sintaxis erá la siguiente:
+        <img />
+        atributo, principal y sificiente (source)
+        src="../images/nombre_archivo-imagen.ext"
+     -->
+    <h3>Imagen Local</h3>
+    <div>
+        <img src="images/boladelmundo.png" width="60%" height="260px" alt="bola mundo" />
+        <!-- 60% de su medida -->
+        <!-- No se suele usar alt porque el robot de google piensa que tu servidor No es bueno -->
+    </div>
+    <div>
+        <img src="images/boladelmundo.png" width="33%" alt="" />
+        <!-- cambia la vista según el tamaño de pantalla -->
+    </div>
+    <!-- 
+        Carga de imagen por URL
+
+      -->
+    <h3>Imgen por URL</h3>
+    <div align="middle">
+        <img src="https://www.seekpng.com/png/full/899-8993444_world-ball-bola-del-mundo-antigua-png.png"
+            height=210px />
+    </div>
+    <!-- 
+        Alienaciones de texto en vertical con una imagen
+        alinearemos con el atributo align="", con los siguientes valores:
+        1. Top
+        2. Middle
+        3. Bottom
+       -->
+    <img src="images/boladelmundo.png" align="top" alt="" width="33%" /> La tierra txt Arriba <br>
+    <!-- texto aparece a la altura de arriba de la imagen -->
+    <img src="images/boladelmundo2.png" align="middle" alt="" width="33%" />La tierra txt al medio <br>
+    <img src="images/boladelmundo3.png" align="bottom" alt="" width="33%" />La tierra txt al pie <br>
+    <h2>Imágenes y Texto alrededor</h2>
+    <img src="images/boladelmundo.png" width="33%" align="left" alt="">
+    <p align="justify" style="background-color: ivory;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, molestiae?
+        Dicta dolorum hic expedita eveniet, illo beatae architecto ad fugiat!
+        Eius eveniet earum rerum sed aliquid officia cumque libero excepturi?
+        Aut saepe praesentium quia voluptate nemo esse totam, ipsum voluptatem.
+        Repudiandae amet totam repellat iusto adipisci labore eveniet necessitatibus itaque.
+        Illum pariatur consequatur ipsam quos repellendus ducimus ab ratione cupiditate!
+        Blanditiis dolorum quos hic error quis fugit iusto, rerum omnis?
+        Commodi natus reprehenderit asperiores eum quasi quod eaque magni maiores!
+        Similique molestiae ut sed culpa laborum odio. Necessitatibus, dolores vero.
+        Molestiae iste quod facere ullam quas eaque et nihil cum.
+    </p> <br clear = "left">
+    <div></div>
+    <img src="images/boladelmundo.png" width="33%" align="right" alt="">
+    <p align="justify" style="background-color: lightgoldenrodyellow;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, officiis!
+        Ex ipsa rerum, quam quidem officia ipsam sapiente reiciendis in?
+        Molestiae mollitia possimus similique dolorem libero dolore rerum aut? Accusamus!
+        Molestiae in assumenda impedit commodi accusamus voluptates quaerat natus sed.
+        Deserunt fugiat quod vitae maxime laboriosam ex magnam quas dolores.
+        Dolorem qui velit facere id numquam, culpa nam pariatur tenetur.
+        Cupiditate officiis perspiciatis, beatae quidem officia enim culpa facilis aut.
+        Quisquam, nihil cumque molestias enim omnis itaque quo. Voluptatum, illum.
+        Deserunt tenetur magnam soluta eius cum! Sunt vel corrupti accusamus.
+        Aperiam totam facilis eveniet eaque error repudiandae magnam? Natus, culpa!
+    </p> <br clear="right">
+    </div>
+    <div>
+        <img src="images/boladelmundo4.png" width="18%" align="left" alt="">
+        <p align="justify" style="background-color:gainsboro;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quaerat!
+            Quod deleniti fugit mollitia reprehenderit perferendis debitis autem ipsam quas.
+            Ab id commodi excepturi architecto dolore rem asperiores officiis! Quae.
+            Voluptatem dicta facere pariatur itaque. Odio veritatis recusandae veniam delectus.
+            Tenetur provident soluta sequi, sit velit magnam esse dolor culpa?
+            Odit cupiditate nulla natus, animi voluptatem vitae maxime? Provident, est.
+            Officiis, harum dolores. Quia quaerat dignissimos qui nisi itaque veniam.
+            Sed omnis possimus ducimus autem porro. Voluptatibus tempore rerum dolor!
+            Cupiditate beatae repudiandae nobis fugit, blanditiis nostrum veritatis excepturi placeat.
+            Eaque eum error eius vero aspernatur porro assumenda, architecto earum.
+        </p>
+    </div>
+    <!-- Marquesinas de desarrollo -->
+    <marquee bgcolor="blue" hight="60px" style="color:azure" direction="right" behavior="alternate" direction=""> <h2>El mundo a sus pies .. √ El mundo es tuyo </h2> </marquee>
+    <!-- Alternate No se debería usar para pantalla de móvil -->
+</body>
+
+</html>
