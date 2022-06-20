@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <a name="arriba"></a>
+    <a href="index.html"><img src="images/home.png" width="6%" alt=""></a>
+    <!-- 
+        ------las listas------
+        Listas Ordenadas
+        Para ordenar contenido de forma ordenada.
+        Irán numerada o clasificadas
+        Etiqueta contenedora <ol>
+            y se definen los elementos por <li>
+                    Sintaxis:
+                    <ol>
+                        <li> </li>
+                    </ol>
+                Atributos:
+                Asociados a su clasificación, Type=""
+                los valores de uso serán:
+                ->"1" La enumeración será: 1, 2, 3, 4..
+                ->"a" La enumeración será: a, b, c..
+                ->"A"
+                ->"I" La enumeración será: I, II, III..
+     -->
+    <h2 align="center">Ejemplo de listas</h2>
+
+    <h3>Listas Ordenadas</h3>
+    <ol type="i">
+        <li>Juan</li>
+        <li>Maria</li>
+        <li>Luis</li>
+        <li>Jorge</li>
+        <li>Manuela</li>
+        <li>Luisa</li>
+    </ol>
+
+    <h3>Listas Ordenadas II</h3>
+    <ol type="a">
+        <li>líquidos
+            <ol>
+                <li>h2o(Agua)
+                    <ol>
+                        <li>licuada</li>
+                        <li>Estado líquido</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>ácidos
+            <ol>
+                <li>HSO3(Acido Sulfúrico)</li>
+            </ol>
+        </li>
+        <li>Neutros
+            <ol>
+                <li>
+                    NH3(Amoniaco)
+                </li>
+            </ol>
+        </li>
+        <li>Bases
+            <ol>
+                <li><a href="https://www.ejemplos.co/20-ejemplos-de-bases-quimicas/
+                    ">Ejemplo bases químicas</a></li>
+            </ol>
+        </li>
+    </ol>
+    <h3>Listas Ordenadas III- Rotura y continuacion</h3>
+    <ol type="A">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ol>
+    <p align="right">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, laboriosam?
+        Odit voluptate aliquid totam veritatis ut dicta repellendus saepe nesciunt.
+        Deleniti tempora dolorum exercitationem saepe provident quis iure omnis veniam.
+        Repellendus nobis esse quam harum inventore, recusandae repellat fugiat magni.
+        Natus hic voluptatem illo voluptates accusamus quos fuga cupiditate distinctio.
+        Impedit voluptate a quam error magni corrupti deserunt id reprehenderit.
+        Sequi veritatis laudantium temporibus totam aspernatur similique, eos aliquid obcaecati?
+        Commodi non, in nihil doloribus dolores quisquam eveniet eligendi. Ducimus!
+        Qui ipsam perspiciatis fugiat sint. Beatae aspernatur quas dicta in.
+        Esse quos magnam hic fugiat quibusdam voluptatum iusto asperiores tenetur!
+    </p>
+    <ol type="A" start="3">
+        <li>Elemento 3</li>
+    </ol>
+    <h3>Listas No Ordenadas</h3>
+    <!-- 
+        Lista No ordenadas
+        No habrá listado de orden, pero sí estructura de orden.
+        Etiqueta contenedora será <ul>
+        Repite estructura de elemento <li>
+        Atributo, type = ""
+        Sus valores:
+        ->circle
+        ->Square
+        ->Disk
+     -->
+     <ul type="circle">
+        <li>Aceite</li>
+        <li>Tomates</li>
+        <li type="square">Mantequilla</li>
+        <li>Pan</li>
+        <li>Pepina</li>
+     </ul>
+
+     <!-- 
+        listas de definición o glosario
+        De uso más técnico, jurídicos, tecnológicos o de referencias,
+        definiciones, descripciones
+        Etiqueta contenedora <dl>
+        Estructura de elementos será <dt>
+        Elementos definidos <dd>
+      -->
+      <h3>Listas de Definición</h3>
+      <dl><!-- description list -->
+        <dt>HTML</dt><!-- term in a description list -->
+        <dd> <cite>Metalenguaje para elaborar contenido web</cite> </dd>
+        <!-- definition in a description list -->
+        <dt>CSS</dt>
+        <dd>Lenguaje para generar estilos en cascada de forma independiente</dd>
+        <dt><strong>JavaScript</strong></dt>
+        <dd>Lenguaje de Ejecución en el entorno Cliente</dd>
+      </dl>
+      <!-- Ejercicio 1: Realizar lista por definición de KMH Y MILLAS POR HORA -->
+      <h2>Glosario de Velocidades</h2>
+      <dl>
+        <dt>KMH</dt>
+        <dd>Kilómetros por hora</dd>
+        <dt>MPH</dt>
+        <dd>Millas por hora</dd>
+      </dl>
+      <div style="display:inline; margin: 0 50%;"><!-- Ajuste al centro en vs Align -->
+        <!-- 0 arriba y abajo, 50% lateral -->
+        <!-- align tal vez No, Es mejor usar margin -->
+        <a href="#arriba"><img src="images/flechaArriba.png" width="6%" alt=""></a>
+    </div>
+</body>
+
+</html>

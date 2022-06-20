@@ -1,0 +1,21 @@
+body{
+    background-color: #ece5da;
+}
+h1{
+    background-color: rgb(209, 206, 206);
+    color: #ece5da;
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    font: bold;
+}
+table{
+    margin: 0 auto;
+}
+a{
+    text-decoration: dotted;
+}
+td{
+    font-weight: bold;
+    font-size: x-large ;
+}
