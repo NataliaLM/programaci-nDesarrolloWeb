@@ -10,16 +10,17 @@
         de nuestras hojas de estilo que hayamos desarrollado
      -->
      <link rel="stylesheet" href="css/styles.css"/>
+     <link rel="stylesheet" href="tabla-lista.html">
 </head>
 <body>
     <h1>Encabezado Principal</h1>
     <h2 style="color: rebeccapurple;"> Elemento de apoyo principal a h2 </h2>
     <!-- condicional si No existe una va a otra -->
     <h3>Texto normal con un grado mayor de tamaño</h3>
-    <h4>Texto normal</h4>
+    <h4 id="parrafo2">Texto normal</h4>
     <h5>Texto pequeño</h5>
-    <h6>Texto muy pequeño</h6>
-    <p id="p2"> PARRAFO 
+    <h6 class="supercalifragilistico">Texto muy pequeño</h6>
+    <p id="parrafo2"> PARRAFO 2
         <br>
         Lorem ipsum dolor sit amet.
         A atque facere qui eligendi?
@@ -32,7 +33,7 @@
         Qui eos voluptate ea autem!
         Quam voluptatum veniam placeat optio?
     </p>
-    <p>
+    <p class="supercalifragilistico"> Parrafo 1 <br>
         Lorem ipsum dolor sit amet.
         Est adipisci maxime reiciendis saepe.
         Numquam itaque maxime nulla magnam!
@@ -44,5 +45,48 @@
         Expedita quibusdam reiciendis libero accusamus?
         Perspiciatis commodi optio dolorem provident.
     </p>
+    <p class="verdoso" style="background-color:gray">
+        Parrafo 3 <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, maxime!
+        Perspiciatis tempore error ea repudiandae quia? Culpa beatae omnis voluptatum?
+        Impedit consequatur amet perspiciatis ducimus quis dolorem! Facere, a libero!
+        Minima tenetur consequuntur cum, facilis quis sapiente maiores excepturi laboriosam.
+        Quod dolorem dolore praesentium magni iure ut consequuntur officia laudantium!
+        Illum assumenda pariatur dolor voluptas ad quaerat expedita accusantium in.
+        Ex cupiditate ab, aliquam ut sequi excepturi impedit voluptas repudiandae.
+        Facilis, quibusdam tempora! Possimus obcaecati commodi earum deserunt consequatur impedit.
+        Provident quaerat voluptate odit atque blanditiis, accusamus labore consectetur incidunt?
+        Ab possimus, aliquid voluptates architecto soluta provident labore enim corrupti?
+    </p>
+    <table align = "center">
+        <!-- <h3>
+            Ejercicio Principales Buscadores (tabla de 2 columnas y 3 filas)
+        </h3>
+        <caption>Principales buscadores de Internet, caña y pincho con imágenes</caption> -->
+        <tr>
+            <th class="formatoTabla">Buscador</th>
+            <th class="formatoTabla">Referencias</th>
+        </tr>
+        <tr >
+            <td class="formatoTabla">Buscador</td>
+            <td class="formatoTabla">Referencias</td>
+        </tr>
+    </table>
+    <ol class="formatoListaOrdenada">
+        <li>
+            Uno
+        </li>
+        <li>
+            Dos
+        </li>
+    </ol>
+    <ul class="formatoListaNoOrdenada">
+        <li>
+            Tres
+        </li>
+        <li>
+            Cuatro
+        </li>
+    </ul>
 </body>
 </html>

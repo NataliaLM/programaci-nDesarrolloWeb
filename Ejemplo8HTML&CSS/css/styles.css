@@ -27,10 +27,80 @@ h6 {
     #nombreId{
         atributo: Valor;
     }
-    Trasladamos el estilo apuntando con el selector id o indicador
+    Trasladamos el estilo apuntando con el selector ' # ' o indicador
 */
-#p2{
+#parrafo2{
     background-color: orange;
     font-size: xx-large;
     font-style: oblique;
+}
+/*
+    3. Estilo estándar para aplicación de estilos
+    Sintaxis:
+    .nombreReferencia {
+            atributo: Valor;
+            El selector ' . ' como atributo class
+    }
+*/
+.supercalifragilistico{
+    color :green;
+    text-align: center;
+
+}
+/*
+    3.1 Estilo estándar para etiqueta + clase
+    Sintaxis:
+    etiqueta.nombreReferencia{
+        atributo: Valor;
+    }
+*/
+p.verdoso{
+    color: green;
+    font-size: x-large;
+    border: 4px solid red;
+}
+/* 
+    Ejercicio:
+    Realizar tabla con borde azul, centrada 
+    y una lista ordenada en mayúscula y centrada
+    y otra no ordenda con estilo square, todo desde css
+*/
+formatoTabla{
+    align-items:"center";
+}
+formatoTabla{
+    border-color: blue;
+    align-items: center;
+    /* background-color: blue; */
+    border-collapse: separate;
+    /* border: red 5px solid; */
+    border: orange 5px solid;
+}
+ol.formatoListaOrdenada{
+    text-transform: uppercase;
+    /*align-items: center;*/
+    align-self: center;
+}
+ul.formatoListaNoOrdenada{
+    list-style: square; ;
+}
+/* solución */
+ol,
+li {
+    list-style : upper-roman;
+    margin-left: 150px;
+    text-transform: uppercase;
+}
+div{
+    margin-left: 380px;
+}
+table,
+th,
+td{
+    border : 2px solid cornflowerblue;
+    border-collapse: collapse;
+    /* Sin colapse se ve doble línea */
+    text-align : center;
+    text-transform: uppercase;
+    margin-left: 150px;
 }
