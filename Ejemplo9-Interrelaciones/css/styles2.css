@@ -1,0 +1,75 @@
+p {
+    background-color: #edededed;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+nav {
+    width: 200px;
+    background-color: #e4d9e0;
+    margin: 0 auto;
+    /* 
+        margin: Establecerá los márgenes para los cuatro lados
+        Es una abreviación para evitar tener que estableces cada lado
+        por separado con las otras propiedades de margen
+
+        0 significa 0px
+    */
+}
+
+li a {
+    color: #238cf5;
+    text-decoration: none;
+    /* Sin subrayado */
+
+}
+li{
+    list-style: none; /* Sin viñetas */
+
+}
+
+span {
+    background: #68aaec;
+    /* background-color: #edededed ; */
+    /* Porque es una etiqueta de contenido */
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+    /* 
+        Display: Valores más utilizados son: block y inline.
+        La dimensión que posee el propio elementohace que se comporte como un bloque o línea respectivamente.
+        Block, se transforma en un elemento de bloque por lo que siempre empieza en una nueva línea y además
+        ecupará el espacio disponible en la propia línea, aunque sus contenedores No ocupen su sitio.
+    */
+    display: block;
+}
+
+#tocar {
+    /* 
+            Opacity: Define la transparencia de un elemento, siendo
+            1. Máxima opacidad (solid) y 0 mínima opacidad
+    */
+    opacity: 0;
+    height: 0px; /*  */
+}
+.desliz {
+    text-align: left;
+    width: 100%;
+    height: 0px;
+    /* 
+        Overflow: hidden -> Contenido a recortar y que no muestra en posición
+    */
+    overflow: hidden;
+    transition: 0.5s; /* segundos */
+
+}
+.desliz li{
+    padding: 20px;
+}
+#tocar:checked+.desliz{
+    height: 300px;
+}

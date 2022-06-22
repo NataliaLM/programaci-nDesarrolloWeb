@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
     <link rel="stylesheet" href="css/styles1.css">
+    <!-- 
+        Ponemos el favicon asociado al title
+        Sintaxis:
+        <link rel = "icon" href="archivo.extension" type="imagen/png"
+     -->
+     <link rel="icosn" href="images/compartir.png">
+     <link rel="stylesheet" href="css/styles1.css"/>
 </head>
 
 <body>
@@ -19,15 +26,17 @@
             <!-- Encabezados debe ir dentro de a. -->
             <td> <a href="parrafos.html">Párrafos</a> </td>
             <td> <a href="listas.html">Listas</a> </td>
-            <td> <a href="">Enlaces &= página</a> </td>
-            <td> <a href="">Enlace mapeado (a un punto)</a> </td>
+            <td> <a href="enlaces_pagina.html">Enlaces &= página</a> </td>
+            <td> <a href="enlaces_pagina.html#t4">Enlace mapeado (a un punto)</a> </td>
         </tr>
     </table>
-    <div style="display:inline-block; margin : auto 50%;">
+    <!-- <div style="display:inline-block; margin : auto 50%;"> -->
+    <div style = "text-align: center; margin: 0px auto">
         <!-- 
             Enlaces a otras páginas, atributo target. Abre otra pestaña nueva, No se pierde
             la navegación de inicio.
         -->
+        <!-- <div style txt-align: center; margin: 0px auto> -->
 
         <a href="" target="_blank">
             <h3>News</h3>
@@ -44,13 +53,24 @@
             2. Enlace con texto predefinido
         c) Enlace a RR.SS 
      -->
-        <div>
+        <div style = "float:left;">
             <p>
                 Enlace e-mail
             </p>
             <a href="mailto:natalia.jup.12@gmail.com">
-                <img src="images/logoCorreo.png" width="75%" alt="">
+                <img src="images/logoCorreo.png" width="4%" alt="">
             </a>
+            <p>Enlace Whatsapp</p>
+            <a href="http://api.whatsapp.com/send?phone=644425009">
+                <img src="images/whatsapp.png" width=4% alt=""></a>
+            <a href="http://api.whatsapp.com/send?phone=644425009&text=Hola, estoy interesada
+            en su oferta, querría más información.">
+                <img src="images/whatsapp.png" width="4%" alt=""></a>
+            <p>RR.SS</p>
+            <a href="https://facebook.com/NataliaLaRosaMontero"><img src="images/facebook.png" width="4%" alt=""></a>
+            <a href="https://facebook.com/shared.php?u=http://www.desarrolloweb.com"><img src="images/compartir.png" width="4%" alt=""></a>
+            <a href="https://www.linkedin.com/in/natalia-paloma-la-rosa-montero-a684b9230/"><img src="images/linkedin.png" width="4%" alt=""></a>
+            <a href="https://www.instagram.com/natalia21.h"><img src="images/instagram.png" width="4%" alt=""></a>
         </div>
     </div>
 </body>
