@@ -48,8 +48,85 @@ form label span {
     color: black;
 }
 
-form,
-h2,
-div {
-    color: green;
+/*
+    Selectores con directiva
+*/
+ol li[id^='J'] {
+    /* Empieza con J mayúscula; * es que contenga */
+    background-color: pink;
+}
+
+/*
+    2. Contenga la selección
+*/
+ol li[id*='a'] {
+    /* Empieza con J mayúscula; * es que contenga */
+    background-color: rgb(194, 147, 155);
+}
+
+/*
+    3. Finalizar la selección
+*/
+ol li[id$='s'] {
+    /* Empieza con J mayúscula; * es que contenga */
+    background-color: rgb(101, 76, 80);
+}
+
+table,
+tr,
+td {
+    width: 30%;
+    border: thin solid navy;
+    border-collapse: collapse;
+    caption-side: bottom;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*
+    Tiene prioridad el final, inicio y medio.
+*/
+/*
+    lo que esta a la derecha o "abajo" tiene prioridad
+*/
+
+/*
+    pseudo-clases;
+    sintaxis: [elemento, clase o grupo de elementos]:nth-child(posición, )
+*/
+tr:nth-child(even){ /*hijos de tr, filas pares*/
+    background-color: lightsalmon;
+}
+tr:nth-child(odd){
+    background-color: yellow;
+}
+/*
+    Los más usados y de gran recurso serán los pseudoelementos:
+    :first-child (selección del primer elemento)
+    ::first-letter (selección primera letra)
+    ::before (inicio del contenido)
+    ::after (final del contenido)
+    :nth-last-child() (último hijo)
+    :nth-of-type() (en función de la posición del elemento)
+
+    nth -> number th
+*/
+ul li:first-child{
+    background-color: bisque;
+}
+ul li:nth-child(5){
+    background-color: burlywood;
+}
+/*
+    Ejercicio:
+        Seleccionar de 3 párrafos, el primero, sus fuentas sean negras,
+        gruesas y de tamaño x-large y el tercero color de letra rojo.
+*/
+ul p:nth-child(1){
+    color:black;
+    font-weight: bold;
+    font-size: x-large;
+}
+ul p:nth-child(3){
+    color:red;
 }
