@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las medidas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2>Análisis de las medidas</h2>
+    <h3>Herencia normal</h3>
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres
+            <ul>
+                <li>Tres 1.1</li>
+                <li>Tres 1.2
+                    <ul>
+                        <li>Tres 1.2.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Herencia medida em</h3>
+    <p>
+        em: Nació de una equivalencia tal como M('eme mayúscula')
+        A partir se utiliza em, como tipo y tamaño de referencia,
+        ed: 1 em = 16 px
+    </p>
+    <ul class="em">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres
+            <ul>
+                <li>Tres 1.1</li>
+                <li>Tres 1.2
+                    <ul>
+                        <li>Tres 1.2.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        Observamos en los elementos li, dentro de otro elemento ul,
+        con la clase definida toma el tamaño con respecto al elemento padre,
+        ed: en cada nivel de anidación, el tamaño de la letra aumentará progresivamente
+        con el tamaño definido(1.3em)
+    </p>
+    <h3>Herencia medida rem</h3>
+    <p>
+        rem: Una equivalencia a em, con una salvedad; el punto de referencia del
+        elemento será siempre el raíz
+    </p>
+    <ul class="rem">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres
+            <ul>
+                <li>Tres 1.1</li>
+                <li>Tres 1.2
+                    <ul>
+                        <li><strong>1.2.1</strong></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

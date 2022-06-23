@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario I</title>
+</head>
+
+<body>
+    <!-- 
+        ------Formulario------
+<a href="pagina.interesa o referencia">Aquí se crea la magia</a>
+     <label>Nombre: </label>
+     <input type="text"> donde tenemos todo el interés de información
+
+     Será ese conjunto de elementos que permiten introducir datos a los usuarios
+     para su Tratamiento, almacenaje u otras operaciones
+     Sintaxis:
+        <form>
+        </form>
+        Estructura:
+            1. Agrupación de los contenidos
+                Partiremos de dos etiquetas contenedoras:
+                    a.<fieldset></fieldset> En concreto delimita un conjunto de directivas
+                        a Resaltar
+                    b. <legend></legend>
+            2. Introducción de los datos<input/>
+                a. Texto
+                    [atributos]
+                    *type="Naturaleza del input, tipo texto, password, número, file, .."
+                    *name="Nombre de la llamada de la variable, que guarda dicho dato"
+                    *size="Define el tamaño o valor de número de caracteres"
+                    *maxlength="Limita el número de caracteres a incroporar."
+                    *value="valor por defecto establecido en esa variable"
+                    align=""
+                    *disable="elementos desactivados por determinado interés"
+                    *readonly="impide modificar el contenido del elemento (para que el usuario No se vaya)"
+                b. Menús
+                    Aquí se diferencia con respecto a la introducción de datos, a una elección del usuario
+                    Siendo referentes:
+                    i. Atributo <select> Percepción de una ventana desplegable
+                        -> name
+                        -> size
+                        -> multiple
+                    ii. Atributo <detalist> Pemite mostrar una lista directa de valores.
+                        -> select: Opción por defecto
+                        -> value: Definirá el valor que Tomará la variable.
+            3. Envío de datos
+                Será condición necesaria, pero No Suficiente el botón
+                Sintaxis:
+                        <input type = "submit" value = ""/> Aparecerá un botón Enviar, al pulsar permite trasladar los datos,
+                        El vauel, será el valor que le damos a la acción del botón para enviar
+                        <input type = "reset"/> Borrado de datos -- Nada recomendable --
+     -->
+    <div style="margin: 0 auto; width: 380px ;">
+        <form style="text-align: left" action="">
+            <h2 align="middle">Formulario HTML</h2>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label>Nombre:</label>
+                <input type="text" name="nombre" minlength="3" maxlength="20"><br>
+                <label>Apellidos:</label>
+                <input type="text" name="apellidos" list="apellidosList"> <br>
+                <datalist id="apellidosList">
+                    <option value="lopez">López</option>
+                    <option value="sanz">Sanz</option>
+                    <option value="castejon">Castejón</option>
+                    <option value="gutierrez">Gutierrez</option>
+                </datalist>
+                <label>Edad:</label>
+                <input type="number" name="edad" min="18" size="10"><br>
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" name="fechaNacimiento"><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Reservas:
+                </legend>
+                <label for="">
+                    Escoge tu aventura
+                </label>
+                <select name="experiencia">
+                    <option value="experiencia"></option>
+                    <option value="">-----</option>
+                    <option value="">Descenso de rapidos(150 €/persona)</option>
+                    <option value="">Aventura velero con Atardecer (135 €/persona)</option>
+                    <option value="">MasterClass Surf (90€ para dos personas)</option>
+                    <option value="">Glamping (35€/noche-persona)</option>
+                </select>
+                <label for="">fecha de reserva:</label>
+                <input type="date" name="reserva"> <br>
+                <label for="">fecha de entrada</label>
+                <input type="datetime-local" name="entrada"> <br>
+                <label for="">fecha de salida</label>
+                <input type="datetime-local" name="salida"> <br>
+            </fieldset>
+            <fieldset>
+                Contacto:
+                <label for=""> <strong>e-mail:</strong> </label>
+                <input type="email" name="email" id="">
+            </fieldset>
+            <div align="middle">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" /><!-- value texto que aparece en el botón -->
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

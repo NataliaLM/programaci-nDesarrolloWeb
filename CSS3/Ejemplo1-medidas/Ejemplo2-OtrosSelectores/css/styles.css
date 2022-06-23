@@ -1,0 +1,55 @@
+form,
+h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*
+    Asociación ( : )
+    Selector conjugando etiquetas y atributos
+*/
+input:disabled {
+    color: red;
+    opacity: 0;
+}
+
+input:focus {
+    border: thick solid skyblue;
+}
+
+/*
+    Asociada a una acción de botón
+*/
+label:active {
+    background-color: skyblue;
+}
+
+/*
+    Asociación etiquetas, atributo checkbox + acción (input)
+    para asociar etiquetas y estilos, utilizaremos el selector adyacente (+)
+
+*/
+input[type=checkbox]:checked+label {
+    font-weight: bold;
+    color: green;
+    font-size: xx-large;
+}
+
+/*
+    Diferenciar asociación (intervención de una acción) con computación de elementos
+*/
+form label {
+    color: blue;
+    font-weight: bolder;
+}
+
+form label span {
+    font-size: xx-small;
+    color: black;
+}
+
+form,
+h2,
+div {
+    color: green;
+}
