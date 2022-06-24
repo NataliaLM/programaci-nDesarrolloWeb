@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transición básica</title>
+</head>
+
+<body>
+    <style>
+        ul {
+            list-style: circle;
+        }
+
+        li {
+            margin: 0 auto;
+            text-align: center;
+            padding: 5px;
+            transition: margin-left 2s, font-weight 2s, font-size 2s;
+            text-decoration: none;
+        }
+        /* li{
+            text-align: center;
+        } */
+
+        /*
+            pseudo-clase: Su referencia principal está con asociación (:), que transmite
+            al usuario cierta interacción con acciones de señalización. Pero No
+            necesariamente activa hacia una acción.
+        */
+        li:hover {
+            margin-left: 50px;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+    </style>
+    <ul>
+        <li> <a href="">🍕 Opción 1</a></li>
+        <li>🍔 Opción 2</li>
+        <li>🍟 Opción 3</li>
+        <li>🌭 Opción 4</li>
+        <li>🍿 Opción 5</li>
+    </ul>
+</body>
+
+</html>

@@ -122,11 +122,17 @@ ul li:nth-child(5){
         Seleccionar de 3 párrafos, el primero, sus fuentas sean negras,
         gruesas y de tamaño x-large y el tercero color de letra rojo.
 */
-ul p:nth-child(1){
+p{
+    color: blue;
+}
+p:nth-of-type(1){ /*first-of-type*/
     color:black;
     font-weight: bold;
     font-size: x-large;
 }
-ul p:nth-child(3){
+p:nth-child(2){
+    color:rgb(69, 153, 86);
+}
+p:last-child{
     color:red;
 }
