@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="icon" href="images/iconoArbolNavidad.png">
+</head>
+
+<body>
+    <a name="arriba"></a>
+    <a href="paginaPrincipal.html"><img src="images/home.png" width="4%" alt=""></a>
+    <div style="margin: 0 auto; width: 550px ;">
+        <form style="text-align: left" action="">
+            <h2 align="middle">Formulario para comprar en Merry Christmas</h2>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label>Nombre:</label>
+                <div>
+                    <input type="text" name="nombre" minlength="3" maxlength="20"><br>
+                </div> 
+                <label>Apellidos:</label>
+                <div>
+                <input type="text" name="apellidos" list="apellidosList"> <br>
+                </div>
+                <label for="">Sexo:</label>
+                <input type="radio" name="sexoParam" id="" value="Hombre">Hombre
+                <input type="radio" name="sexoParam" id="" value="Mujer">Mujer
+                <input type="radio" name="sexoParam" id="" value="Transgenero">Transgénero <br><br>
+                <label>Localidad:</label>
+                <div>
+                <input type="number" name="localidad" min="18" size="10"><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Pedido:
+                </legend>
+                <label for="">
+                    Escoge tu compra
+                </label>
+                <div>
+                <select name="compra">
+                    <option value="compra"></option>
+                    <option value="">-----</option>
+                    <option value="">Papá Noel</option>
+                    <option value="">Nacimiento</option>
+                    <option value="">Árbol de navidad</option>
+                </select></div>
+                <br>
+                <label for="">
+                    Escoge el tamaño
+                </label>
+                <div>
+                <select name="tamanio">
+                    <option value="">-----</option>
+                    <option value="">Grande</option>
+                    <option value="">Mediano</option>
+                    <option value="">Pequeño</option>
+                </select></div>
+            </fieldset>
+            <fieldset>
+                Contacto:
+                <label for=""> <strong>e-mail:</strong> </label>
+                <div>
+                <input type="email" name="email" id=""></div>
+            </fieldset>
+            <div align="middle">
+                <input type="submit" value="Enviar" class="formatoBoton" />
+                <input type="reset" value="Borrar" class="formatoBoton"/><!-- value texto que aparece en el botón -->
+            </div>
+        </form>
+
+    </div>
+    <div style="display:inline; margin: 0 50%;"><!-- Ajuste al centro en vs Align -->
+        <!-- 0 arriba y abajo, 50% lateral -->
+        <!-- align tal vez No, Es mejor usar margin -->
+        <a href="#arriba"><img src="images/flechaArriba.png" width="4%" alt=""></a>
+    </div>
+    <audio src="sounds/christmas-atmosphere-60s-version-12461.mp3" controls="true" autoplay="true" loop="true"></audio>
+
+</body>
+
+</html>

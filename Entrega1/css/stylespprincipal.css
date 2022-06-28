@@ -1,0 +1,65 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FDEDEC;
+}
+div{
+    width: 980px;
+    margin: 0  auto;
+    text-align : center;
+}
+header{
+    width: 980px;
+    height: 120px;
+    background-color: #F2D7D5;
+}
+nav{
+    width: 980px;
+    height: 50px;
+    background-color: #E6B0AA;
+    color: #D98880;
+    float: left;
+    padding-top: 7px;
+}
+section{
+    width: 780px;
+    float: left;
+    height: 420px;
+    background-color: #CD6155;
+}
+article{
+    width: 780px;
+    background-color: #C0392B;
+    border-bottom: 2px solid #D98880;
+    float: left;
+    min-height: 200px;
+    /* 
+        min-height: Si la altura necesaria para mostrar los contenidos de ese elemento son inferiores a esta
+        altura mínima, se forzará a que la altura del elemento se a igual que la altura mínima.
+    */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+aside{
+    float: right;
+    width: 200px;
+    height: 220px;/* incluye el margen inferior */
+    background-color: #F2D7D5;
+    border-bottom: 10px solid #922B21;
+    margin: auto;
+}
+footer{
+    float: left;
+    width: 980px;
+    background-color: #E6B0AA;
+    height: 90px;
+}
+footer p{
+    margin: 20px 20px;
+    padding-left: 20px;
+     /* padding-top: 20px;  */
+}
+h2{
+    font-style: italic;
+}
+ul li{
+    font-family: 'Courier New', Courier, monospace;
+}

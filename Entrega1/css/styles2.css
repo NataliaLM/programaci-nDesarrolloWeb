@@ -1,0 +1,51 @@
+body{
+    background-color:#FDEDEC;
+}
+div{
+    padding-top: 0.5%;
+    background-color:#F2D7D5;
+}
+h2{
+    background-color: #E6B0AA;
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
+}
+legend{
+    background-color: #D98880;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+fieldset label{
+    background-color: #CD6155;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    /* width: 400px; */
+}
+fieldset div{
+    background-color:#F2D7D5;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    padding-top: 0%;
+    /* width: 400px; */
+}
+input{
+     margin-block: 5%;
+    margin-inline: 20px;
+    padding-left: 40%;
+
+}
+fieldset div select{
+    padding-left: 30%;
+}
+.formatoBoton{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#cuadro1{
+    border-radius: 20px;
+}

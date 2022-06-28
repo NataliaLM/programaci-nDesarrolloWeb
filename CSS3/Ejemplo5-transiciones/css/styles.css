@@ -24,6 +24,7 @@
     font-size: x-large;
     font-weight: bold;
 }
+/* Mi solución */
 .menuSegundo{
     color:gray;
     font-size: 30px;
@@ -35,4 +36,19 @@
     color:black;
     font-size: x-large;
     font-weight: bold;
+}
+/* Solución */
+#caja{
+    width: 30em;
+    background-color:gainsboro;
+    border-radius: 9px;
+    padding: 1em;
+    font-weight: bold;
+    transition: width 2s, height 3s, background-color 4s, margin 8s;
+}
+#caja:hover{
+    width: 30%;/* No puede coincidir origen y destino */
+    background-color: grey;
+    margin: 0 auto;
+    text-align: center;
 }

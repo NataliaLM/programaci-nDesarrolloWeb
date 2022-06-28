@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura HTML</title>
+    <link rel="stylesheet" href="css/stylespprincipal.css">
+    <link rel="icon" href="images/iconoArbolNavidad.png">
+</head>
+
+<body style="background-color: #D98880;">
+    <style>
+        th:hover {
+            margin-left: 50px;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+    </style>
+    <div>
+        <a name="arriba"></a>
+        <header>
+            <h2>
+                <!-- Encabezado de la página[h1, logo, Interacción visual con el usuario] -->
+                <h1 style="color: #D98880;">Compras navideñas en Marry Christmas</h1>
+                <img src="images/imagenMerryChristmas.png" alt="" width="30%" height="50%">
+
+            </h2>
+        </header>
+        <nav>
+
+            <table cellpadding="9px" style="padding-left:170px;">
+                <!-- Un padding entre cada celda -->
+                <tr>
+                    <td> <a href="formulario.html" style="text-decoration: none; color:#C0392B;">
+                            <strong>Compra</strong> </a> </td>
+                    <!-- Encabezados debe ir dentro de a. -->
+                    <td> <a href="catalogo.html" style="text-decoration: none; color:#C0392B;">Catálogo de Papá Noel</a>
+                    </td>
+                    <td> <a href="catalogoArbol.html" style="text-decoration: none; color:#C0392B;">Catálogo de
+                            Árbol</a> </td>
+                    <td> <a href="catalogoNacimiento.html" style="text-decoration: none; color:#C0392B;">Catálogo de
+                            Nacimiento</a> </td>
+                </tr>
+            </table>
+        </nav>
+        <section>
+            <h2>La magia de la navidad ocurre cuando haces brillar tu hogar</h2>
+            <article>
+                Aquí puedes elegir entre
+                <ul style="list-style: none;">
+                    <li>🎄 Papá Noel</li>
+                    <li>🎄 Nacimiento</li>
+                    <li>🎄 árbol de navidad</li>
+                </ul>
+                Además podrás elegir diferentes tamaños
+                <ul style="list-style: none;">
+                    <li>🎄 Pequeño</li>
+                    <li>🎄 Mediano</li>
+                    <li>🎄 Grande</li>
+                </ul>
+            </article>
+            <article>
+                <table style="padding-left:220px;">
+                    <caption style="padding-left:200px;">Elige una</caption>
+
+                    <tr>
+                        <th><a href="catalogo.html" style="text-decoration: none; color:#C0392B;">Papá Noel</a></th>
+                        <th> <a href="catalogoArbol.html" style="text-decoration: none; color:#C0392B;">Árbol de navidad
+                            </a></th>
+                        <th><a href="catalogoNacimiento.html"
+                                style="text-decoration: none; color:#C0392B;">Nacimiento</a></th>
+                    </tr>
+                    <tr>
+                        <td>Grande </td>
+                        <td>Grande</td>
+                        <td>Grande</td>
+                    </tr>
+                    <tr>
+                        <td>Mediano </td>
+                        <td>Mediano</td>
+                        <td>Mediano</td>
+                    </tr>
+                    <tr>
+                        <td>Pequeño </td>
+                        <td>Pequeño</td>
+                        <td>Pequeño</td>
+                    </tr>
+                    <colgroup>
+                        <!-- <col style="background-color: lemonchiffon" /> -->
+                        <!-- <col span="0" style="background-color: lightsalmon;" /> -->
+                        <!-- <col span="0" style="background-color: lightsalmon;" /> -->
+                        <col span="3" style="background-color: #D98880;" />
+                        <col style="background-color: #CD6155" />
+                    </colgroup>
+                </table>
+            </article>
+        </section>
+        <aside style="color: #D98880;">
+            <p>
+                <br><br>
+                <!-- Contenidos publicidad, Apis [Laterales] -->
+                Somos la empresa de Navidad que más ha vendido en el año 2021.
+            </p>
+        </aside>
+        <aside style="color: #D98880;">
+            <p>RR.SS</p>
+            <br><br>
+            <a href="https://facebook.com/NataliaLaRosaMontero"><img src="images/facebook.png" width="18%" alt=""></a>
+            <a href="https://facebook.com/shared.php?u=http://www.desarrolloweb.com"><img src="images/compartir.png"
+                    width="18%" alt=""></a>
+            <a href="https://www.linkedin.com/in/natalia-paloma-la-rosa-montero-a684b9230/"><img
+                    src="images/linkedin.png" width="18%" alt=""></a>
+            <a href="https://www.instagram.com/natalia21.h"><img src="images/instagram.png" width="18%" alt=""></a>
+        </aside>
+        <!-- Laterales de página -> aside -->
+        <footer>
+            <p>
+                ✉ correo merrychristmas@gmail.com
+                📞 teléfono 374973947
+            </p>
+        </footer>
+    </div>
+    <div align="center">
+        <a href="#arriba"><img src="images/flechaArriba.png" width="6%" alt=""></a>
+    </div>
+</body>
+
+</html>
